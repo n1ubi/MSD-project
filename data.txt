@@ -1,0 +1,12 @@
+Health status: Good 
+Growth stage: Rice heading stage (requires enhanced nutrition)
+Leaf condition:No disease spots/abnormalities
+
+Temperature:28°C (Appropriate range: 25 - 30°C)
+Humidity:65% (Appropriate range: 60 - 70%)
+Weather: Sunny with some clouds
+Light intensity: Abundant
+
+Insect infestation level: Low risk
+Main pests: No obvious signs of pest activity
+Prevention and Control Suggestions: Maintain the monitoring frequency
