@@ -1,0 +1,130 @@
+#camera-feed { border-top-color: #9C27B0; }
+#camera-feed h2 { color: #9C27B0; }
+.camera-feed {
+    width: 100%;
+    height: 240px;
+    background: #333;
+    margin: 12px 0 18px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+.camera-feed::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://picsum.photos/id/106/1200/400') center/cover no-repeat;
+    opacity: 0.6;
+}
+.camera-feed p {
+    position: relative;
+    z-index: 1;
+    background: rgba(0,0,0,0.5);
+    padding: 8px 15px;
+    border-radius: 4px;
+    backdrop-filter: blur(2px);
+    font-size: 1rem;
+}
+#camera-feed .data-point { 
+    margin: 10px 0;
+    padding: 10px 12px;
+    background: #f8f5fd;
+    border-radius: 6px;
+    border-left: 3px solid #9C27B0;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+}
+#camera-feed .data-point:hover { background: #f3eaf9; }
+#camera-feed .data-point i {
+    margin-right: 8px;
+    color: inherit;
+    opacity: 0.7;
+    width: 18px;
+    text-align: center;
+}
+#camera-feed .data-point span {
+    font-size: 0.9rem;
+    color: #666;
+    margin-left: 8px;
+    opacity: 0.9;
+}
+/* 弹窗样式（成员3负责） */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+}
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 450px;
+    width: 90%;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    transform: translateY(-15px);
+    opacity: 0;
+    animation: modalFade 0.3s forwards;
+}
+@keyframes modalFade {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.modal-content h3 {
+    color: #2E8B57;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-content h3 i {
+    margin-right: 8px;
+}
+.modal-content p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+.close-modal {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: all 0.3s;
+    box-shadow: 0 2px 5px rgba(76, 175, 80, 0.2);
+}
+.close-modal:hover {
+    background: #3d8b40;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(76, 175, 80, 0.3);
+}
+/* 全局基础样式（需保留，成员3负责确保兼容性） */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:</doubaocanvas>
